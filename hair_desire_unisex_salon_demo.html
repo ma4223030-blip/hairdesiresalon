@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Desire Unisex Salon | Sector 27D, Chandigarh - Concept Demo</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ivory: {
+                            DEFAULT: '#FBF9F5',
+                            light: '#FFFFFF',
+                            dark: '#F2EDE4'
+                        },
+                        charcoal: {
+                            DEFAULT: '#1A1A1A',
+                            muted: '#4A4A4A'
+                        },
+                        gold: {
+                            DEFAULT: '#C5A880',
+                            light: '#DFCBAD',
+                            dark: '#9E825D'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #FBF9F5;
+            color: #1A1A1A;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Custom smooth scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FBF9F5;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #C5A880;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-ivory text-charcoal antialiased selection:bg-gold selection:text-white">
+
+    <!-- Top Demo Banner -->
+    <div class="bg-charcoal text-gold text-xs py-2 px-4 text-center font-medium tracking-widest uppercase flex items-center justify-center gap-2 z-50 relative">
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+        <span>Concept Demo — Not the Official Website of Hair Desire Unisex Salon, Sector 27D, Chandigarh</span>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header id="navbar" class="sticky top-0 z-40 bg-ivory/95 backdrop-blur-md border-b border-gold/20 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#home" class="flex flex-col">
+                <span class="font-serif text-2xl sm:text-3xl font-bold tracking-wide text-charcoal">Hair Desire</span>
+                <span class="text-[10px] uppercase tracking-[0.25em] text-gold-dark font-semibold">Unisex Salon • Sector 27D, CHD</span>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">
+                <a href="#home" class="text-charcoal hover:text-gold transition-colors">Home</a>
+                <a href="#services" class="text-charcoal hover:text-gold transition-colors">Services</a>
+                <a href="#gallery" class="text-charcoal hover:text-gold transition-colors">Gallery</a>
+                <a href="#about" class="text-charcoal hover:text-gold transition-colors">About</a>
+                <a href="#contact" class="text-charcoal hover:text-gold transition-colors">Contact</a>
+            </nav>
+
+            <!-- Action Buttons -->
+            <div class="hidden lg:flex items-center space-x-4">
+                <a href="https://wa.me/919876543210?text=Hi%2C%20I%20would%20like%20to%20enquire%20about%20appointments%20at%20Hair%20Desire%20Sector%2027D" target="_blank" class="flex items-center gap-2 text-xs uppercase tracking-wider font-semibold border border-gold text-charcoal px-5 py-3 rounded-full hover:bg-gold hover:text-white transition-all">
+                    <i class="fa-brands fa-whatsapp text-green-600 group-hover:text-white"></i> WhatsApp
+                </a>
+                <a href="#appointment" class="bg-charcoal text-ivory px-6 py-3 rounded-full text-xs uppercase tracking-wider font-semibold hover:bg-gold transition-all shadow-sm">
+                    Book Enquiry
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-btn" class="md:hidden text-charcoal focus:outline-none p-2" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-ivory-light border-b border-gold/20 px-6 py-6 space-y-4 shadow-xl">
+            <a href="#home" class="block text-lg font-serif text-charcoal hover:text-gold mobile-link">Home</a>
+            <a href="#services" class="block text-lg font-serif text-charcoal hover:text-gold mobile-link">Services</a>
+            <a href="#gallery" class="block text-lg font-serif text-charcoal hover:text-gold mobile-link">Gallery</a>
+            <a href="#about" class="block text-lg font-serif text-charcoal hover:text-gold mobile-link">About</a>
+            <a href="#contact" class="block text-lg font-serif text-charcoal hover:text-gold mobile-link">Contact</a>
+            <div class="pt-4 flex flex-col sm:flex-row gap-3">
+                <a href="https://wa.me/919876543210?text=Hi%2C%20I%20would%20like%20to%20enquire%20about%20appointments%20at%20Hair%20Desire%20Sector%2027D" target="_blank" class="flex items-center justify-center gap-2 text-xs uppercase tracking-wider font-semibold border border-gold text-charcoal px-5 py-3 rounded-xl hover:bg-gold hover:text-white transition-all">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp Enquiry
+                </a>
+                <a href="#appointment" class="flex items-center justify-center bg-charcoal text-ivory px-6 py-3 rounded-xl text-xs uppercase tracking-wider font-semibold hover:bg-gold transition-all">
+                    Book Enquiry
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-charcoal text-ivory py-20 px-4 sm:px-6">
+            <!-- Background Image with Dark Luxury Overlay -->
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=2000" alt="Luxury Salon Ambience" class="w-full h-full object-cover object-center opacity-40 scale-105 animate-pulse duration-1000">
+                <div class="absolute inset-0 bg-gradient-to-r from-charcoal via-charcoal/80 to-transparent"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-gold/40 bg-gold/10 text-gold text-xs font-semibold tracking-widest uppercase">
+                        <i class="fa-solid fa-star text-[10px]"></i> Sector 27D, Chandigarh Luxury Destination
+                    </div>
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-serif font-bold tracking-tight leading-[1.1]">
+                        Your Style. <br><span class="text-gold italic font-normal">Your Statement.</span>
+                    </h1>
+                    <p class="text-ivory/80 text-base sm:text-lg max-w-xl mx-auto lg:mx-0 font-light leading-relaxed">
+                        Step into a sanctuary of elegance. At Hair Desire Unisex Salon, our master stylists curate personalized transformations designed to accentuate your authentic beauty.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#services" class="w-full sm:w-auto bg-gold text-charcoal font-semibold px-8 py-4 rounded-full text-sm uppercase tracking-wider hover:bg-gold-light transition-all shadow-lg text-center">
+                            Explore Our Services
+                        </a>
+                        <a href="https://wa.me/919876543210?text=Hello%20Hair%20Desire%20Salon,%20I%20would%20like%20to%20enquire%20about%20booking%20an%20appointment." target="_blank" class="w-full sm:w-auto border border-ivory/30 text-ivory px-8 py-4 rounded-full text-sm uppercase tracking-wider font-semibold hover:bg-ivory hover:text-charcoal transition-all flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-lg text-green-400"></i> Enquire on WhatsApp
+                        </a>
+                    </div>
+                    <div class="pt-6 border-t border-ivory/10 flex items-center justify-center lg:justify-start gap-8 text-xs text-ivory/70 tracking-widest uppercase">
+                        <div><strong class="text-gold text-base block font-serif">10+</strong>Expert Stylists</div>
+                        <div class="h-8 w-[1px] bg-ivory/20"></div>
+                        <div><strong class="text-gold text-base block font-serif">Sector 27D</strong>Chandigarh</div>
+                        <div class="h-8 w-[1px] bg-ivory/20"></div>
+                        <div><strong class="text-gold text-base block font-serif">Unisex</strong>Luxury Care</div>
+                    </div>
+                </div>
+
+                <!-- Hero Side Image Card -->
+                <div class="lg:col-span-5 hidden lg:block">
+                    <div class="relative mx-auto max-w-md">
+                        <div class="absolute -inset-4 border border-gold/30 rounded-3xl -rotate-2"></div>
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl bg-charcoal-muted aspect-[4/5]">
+                            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=1000" alt="Master Hair Styling" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-transparent to-transparent flex flex-col justify-end p-8">
+                                <span class="text-gold text-xs uppercase tracking-widest font-semibold mb-1">Signature Craft</span>
+                                <h3 class="text-xl font-serif text-ivory">Precision Cuts & Color Couture</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <span class="text-gold text-xs font-bold tracking-[0.25em] uppercase">Tailored Treatments</span>
+                <h2 class="text-3xl sm:text-5xl font-serif font-bold text-charcoal">Our Exclusive Services</h2>
+                <p class="text-charcoal-muted text-sm sm:text-base">
+                    From timeless classic cuts to modern avant-garde styling and revitalizing treatments, explore our curated menu.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1: Haircuts -->
+                <div class="bg-ivory-light rounded-2xl p-8 border border-gold/20 shadow-sm hover:shadow-md transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-14 h-14 rounded-xl bg-gold/10 text-gold flex items-center justify-center text-2xl group-hover:bg-gold group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-scissors"></i>
+                            </div>
+                            <span class="text-xs uppercase tracking-widest font-semibold text-charcoal-muted bg-ivory px-3 py-1 rounded-full border border-gold/10">Confirmed Service</span>
+                        </div>
+                        <h3 class="text-2xl font-serif font-bold text-charcoal mb-3">Precision Haircuts</h3>
+                        <p class="text-charcoal-muted text-sm leading-relaxed mb-6">
+                            Tailored consultations, bespoke styling cuts, and professional blow-dry finishing designed specifically for your face shape and hair texture.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-gold/10 flex items-center justify-between">
+                        <span class="text-xs text-gold-dark font-semibold tracking-wider uppercase">Unisex Styling</span>
+                        <a href="#appointment" onclick="selectService('Precision Haircuts')" class="text-xs uppercase tracking-wider font-bold text-charcoal hover:text-gold flex items-center gap-1">
+                            Enquire <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 2: Hair Styling -->
+                <div class="bg-ivory-light rounded-2xl p-8 border border-gold/20 shadow-sm hover:shadow-md transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-14 h-14 rounded-xl bg-gold/10 text-gold flex items-center justify-center text-2xl group-hover:bg-gold group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-wand-magic"></i>
+                            </div>
+                            <span class="text-xs uppercase tracking-widest font-semibold text-charcoal-muted bg-ivory px-3 py-1 rounded-full border border-gold/10">Confirmed Service</span>
+                        </div>
+                        <h3 class="text-2xl font-serif font-bold text-charcoal mb-3">Advanced Hair Styling</h3>
+                        <p class="text-charcoal-muted text-sm leading-relaxed mb-6">
+                            Red carpet blowouts, elegant bridal updo styling, sleek straightening, and voluminous curls crafted for your special occasions.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-gold/10 flex items-center justify-between">
+                        <span class="text-xs text-gold-dark font-semibold tracking-wider uppercase">Special Occasion</span>
+                        <a href="#appointment" onclick="selectService('Advanced Hair Styling')" class="text-xs uppercase tracking-wider font-bold text-charcoal hover:text-gold flex items-center gap-1">
+                            Enquire <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 3: Hair Colouring [Unconfirmed] -->
+                <div class="bg-ivory-light rounded-2xl p-8 border border-gold/20 shadow-sm hover:shadow-md transition-all group flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute top-4 right-4 bg-amber-100 text-amber-800 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md border border-amber-300">
+                        Subject to Owner Approval
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-14 h-14 rounded-xl bg-gold/10 text-gold flex items-center justify-center text-2xl group-hover:bg-gold group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-palette"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-serif font-bold text-charcoal mb-3">Hair Colouring</h3>
+                        <p class="text-charcoal-muted text-sm leading-relaxed mb-6">
+                            Global shades, sun-kissed balayage, dimensional highlights, and rich root touch-ups using premium international color lines.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-gold/10 flex items-center justify-between">
+                        <span class="text-xs text-amber-700 font-semibold tracking-wider uppercase">Unconfirmed Service</span>
+                        <a href="#appointment" onclick="selectService('Hair Colouring')" class="text-xs uppercase tracking-wider font-bold text-charcoal hover:text-gold flex items-center gap-1">
+                            Enquire <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 4: Hair Treatments -->
+                <div class="bg-ivory-light rounded-2xl p-8 border border-gold/20 shadow-sm hover:shadow-md transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-14 h-14 rounded-xl bg-gold/10 text-gold flex items-center justify-center text-2xl group-hover:bg-gold group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-spray-can-sparkles"></i>
+                            </div>
+                            <span class="text-xs uppercase tracking-widest font-semibold text-charcoal-muted bg-ivory px-3 py-1 rounded-full border border-gold/10">Confirmed Service</span>
+                        </div>
+                        <h3 class="text-2xl font-serif font-bold text-charcoal mb-3">Revitalizing Treatments</h3>
+                        <p class="text-charcoal-muted text-sm leading-relaxed mb-6">
+                            Deep conditioning keratin therapies, anti-frizz smoothening, and intensive scalp nourishment rituals to restore radiant hair health.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-gold/10 flex items-center justify-between">
+                        <span class="text-xs text-gold-dark font-semibold tracking-wider uppercase">Restorative Care</span>
+                        <a href="#appointment" onclick="selectService('Revitalizing Treatments')" class="text-xs uppercase tracking-wider font-bold text-charcoal hover:text-gold flex items-center gap-1">
+                            Enquire <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 5: Beard Grooming -->
+                <div class="bg-ivory-light rounded-2xl p-8 border border-gold/20 shadow-sm hover:shadow-md transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-14 h-14 rounded-xl bg-gold/10 text-gold flex items-center justify-center text-2xl group-hover:bg-gold group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <span class="text-xs uppercase tracking-widest font-semibold text-charcoal-muted bg-ivory px-3 py-1 rounded-full border border-gold/10">Confirmed Service</span>
+                        </div>
+                        <h3 class="text-2xl font-serif font-bold text-charcoal mb-3">Beard Grooming & Shave</h3>
+                        <p class="text-charcoal-muted text-sm leading-relaxed mb-6">
+                            Precision beard sculpting, hot towel luxury shaves, mustache styling, and nutrient-rich beard oil maintenance for gentlemen.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-gold/10 flex items-center justify-between">
+                        <span class="text-xs text-gold-dark font-semibold tracking-wider uppercase">Men's Care</span>
+                        <a href="#appointment" onclick="selectService('Beard Grooming & Shave')" class="text-xs uppercase tracking-wider font-bold text-charcoal hover:text-gold flex items-center gap-1">
+                            Enquire <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 6: Beauty Services [Unconfirmed] -->
+                <div class="bg-ivory-light rounded-2xl p-8 border border-gold/20 shadow-sm hover:shadow-md transition-all group flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute top-4 right-4 bg-amber-100 text-amber-800 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md border border-amber-300">
+                        Subject to Owner Approval
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-14 h-14 rounded-xl bg-gold/10 text-gold flex items-center justify-center text-2xl group-hover:bg-gold group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-spa"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-serif font-bold text-charcoal mb-3">Beauty & Skin Services</h3>
+                        <p class="text-charcoal-muted text-sm leading-relaxed mb-6">
+                            Rejuvenating facial treatments, glow-enhancing cleanups, bridal makeup packages, and professional skincare consultations.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-gold/10 flex items-center justify-between">
+                        <span class="text-xs text-amber-700 font-semibold tracking-wider uppercase">Unconfirmed Service</span>
+                        <a href="#appointment" onclick="selectService('Beauty & Skin Services')" class="text-xs uppercase tracking-wider font-bold text-charcoal hover:text-gold flex items-center gap-1">
+                            Enquire <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hair Transformation Gallery Section -->
+        <section id="gallery" class="py-24 bg-ivory-dark/50 border-y border-gold/20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                    <span class="text-gold text-xs font-bold tracking-[0.25em] uppercase">Visual Portfolio</span>
+                    <h2 class="text-3xl sm:text-5xl font-serif font-bold text-charcoal">Hair Transformations Gallery</h2>
+                    <p class="text-charcoal-muted text-sm sm:text-base">
+                        A glimpse into our artistry. Every look is meticulously crafted to complement individual personality and style.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Gallery Item 1 -->
+                    <div class="group relative rounded-2xl overflow-hidden shadow-md aspect-square bg-charcoal">
+                        <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&q=80&w=800" alt="Balayage Hair Transformation" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                            <span class="text-gold text-xs uppercase tracking-widest font-semibold">Balayage & Waves</span>
+                            <h4 class="text-lg font-serif text-ivory">Dimensional Caramel Highlights</h4>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 2 -->
+                    <div class="group relative rounded-2xl overflow-hidden shadow-md aspect-square bg-charcoal">
+                        <img src="https://images.unsplash.com/photo-1595476108010-b9d1f67f15cb?auto=format&fit=crop&q=80&w=800" alt="Modern Gentleman Cut" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                            <span class="text-gold text-xs uppercase tracking-widest font-semibold">Grooming & Fade</span>
+                            <h4 class="text-lg font-serif text-ivory">Sharp Executive Crop</h4>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 3 -->
+                    <div class="group relative rounded-2xl overflow-hidden shadow-md aspect-square bg-charcoal">
+                        <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&q=80&w=800" alt="Bridal Styling" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                            <span class="text-gold text-xs uppercase tracking-widest font-semibold">Bridal Updo</span>
+                            <h4 class="text-lg font-serif text-ivory">Classic Elegance & Pearls</h4>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 4 -->
+                    <div class="group relative rounded-2xl overflow-hidden shadow-md aspect-square bg-charcoal">
+                        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=800" alt="Silk Press Treatment" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                            <span class="text-gold text-xs uppercase tracking-widest font-semibold">Smoothness Ritual</span>
+                            <h4 class="text-lg font-serif text-ivory">Ultra-Glossy Silk Finish</h4>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 5 -->
+                    <div class="group relative rounded-2xl overflow-hidden shadow-md aspect-square bg-charcoal">
+                        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=80&w=800" alt="Beard Styling" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                            <span class="text-gold text-xs uppercase tracking-widest font-semibold">Beard Sculpting</span>
+                            <h4 class="text-lg font-serif text-ivory">Precision Trim & Hot Towel</h4>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 6 -->
+                    <div class="group relative rounded-2xl overflow-hidden shadow-md aspect-square bg-charcoal">
+                        <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&q=80&w=800" alt="Vibrant Hair Colour" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                            <span class="text-gold text-xs uppercase tracking-widest font-semibold">Color Couture</span>
+                            <h4 class="text-lg font-serif text-ivory">Platinum Blonde Transformation</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span class="text-gold text-xs font-bold tracking-[0.25em] uppercase">The Hair Desire Difference</span>
+                    <h2 class="text-3xl sm:text-5xl font-serif font-bold text-charcoal leading-tight">
+                        Crafted for Those Who Appreciate Excellence
+                    </h2>
+                    <p class="text-charcoal-muted text-sm sm:text-base leading-relaxed">
+                        Located in the heart of Sector 27D, Chandigarh, our salon is designed to provide an escape from the ordinary. We believe true luxury lies in absolute attention to detail and a personalized approach to your hair care journey.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-gold/10 text-gold flex items-center justify-center shrink-0 mt-1">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-serif font-bold text-lg text-charcoal">Personalised Styling Consultations</h4>
+                                <p class="text-charcoal-muted text-sm">Every appointment begins with a thorough consultation to understand your lifestyle, hair texture, and aesthetic aspirations.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-gold/10 text-gold flex items-center justify-center shrink-0 mt-1">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-serif font-bold text-lg text-charcoal">Uncompromising Attention to Detail</h4>
+                                <p class="text-charcoal-muted text-sm">From precision scissor work to color blending, our master stylists ensure pristine results with zero rush.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-gold/10 text-gold flex items-center justify-center shrink-0 mt-1">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-serif font-bold text-lg text-charcoal">Welcoming Salon Experience</h4>
+                                <p class="text-charcoal-muted text-sm">Relax in our sophisticated, calm environment complemented by premium hospitality and serene ambience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature Image Grid -->
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&q=80&w=600" alt="Salon Interior" class="rounded-2xl shadow-md w-full h-64 object-cover">
+                        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=600" alt="Styling Tools" class="rounded-2xl shadow-md w-full h-48 object-cover">
+                    </div>
+                    <div class="space-y-4 pt-8">
+                        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=600" alt="Hair Wash station" class="rounded-2xl shadow-md w-full h-48 object-cover">
+                        <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&q=80&w=600" alt="Happy Client" class="rounded-2xl shadow-md w-full h-64 object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About the Salon Section -->
+        <section id="about" class="py-24 bg-charcoal text-ivory relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#C5A880_1px,transparent_1px)] [background-size:16px_16px]"></div>
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10 text-center space-y-8">
+                <span class="text-gold text-xs font-bold tracking-[0.25em] uppercase">Sector 27D Chandigarh</span>
+                <h2 class="text-3xl sm:text-5xl font-serif font-bold">About Hair Desire Unisex Salon</h2>
+                <div class="w-24 h-[1px] bg-gold mx-auto"></div>
+                <div class="space-y-6 text-ivory/80 text-base sm:text-lg font-light leading-relaxed max-w-3xl mx-auto">
+                    <p>
+                        Hair Desire Unisex Salon stands as a premier destination for hair artistry and grooming in Chandigarh. Situated conveniently in Sector 27D, we combine contemporary trends with timeless techniques to deliver a world-class salon experience.
+                    </p>
+                    <p>
+                        Our team comprises passionate professionals dedicated to continuous education and mastery of international styling standards. Whether you are looking for a subtle refresh or a bold complete makeover, we provide an upscale, welcoming environment tailored to your comfort.
+                    </p>
+                </div>
+                <div class="pt-4 flex flex-wrap justify-center gap-6 text-xs uppercase tracking-widest font-semibold text-gold">
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-location-dot"></i> Sector 27D, Chandigarh</span>
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-clock"></i> Open All Days: 10:00 AM - 8:00 PM</span>
+                    <span class="flex items-center gap-2"><i class="fa-solid fa-circle-check"></i> Unisex Luxury</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Appointment Enquiry Section -->
+        <section id="appointment" class="py-24 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+            <div class="bg-ivory-light rounded-3xl p-8 sm:p-12 border border-gold/20 shadow-xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-40 h-40 bg-gold/5 rounded-full blur-2xl pointer-events-none"></div>
+
+                <div class="text-center max-w-lg mx-auto mb-12 space-y-3">
+                    <span class="text-gold text-xs font-bold tracking-[0.25em] uppercase">Plan Your Visit</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-charcoal">Appointment Enquiry</h2>
+                    <p class="text-charcoal-muted text-sm">
+                        Submit your details below to enquire about your preferred service and date. We will connect with you shortly to confirm your booking.
+                    </p>
+                </div>
+
+                <!-- Enquiry Form -->
+                <form id="enquiryForm" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label for="clientName" class="block text-xs uppercase tracking-wider font-semibold text-charcoal">Your Name <span class="text-gold">*</span></label>
+                            <input type="text" id="clientName" required placeholder="e.g. Aarav Sharma" class="w-full bg-ivory border border-gold/30 rounded-xl px-4 py-3.5 text-sm text-charcoal focus:outline-none focus:border-gold transition-colors">
+                        </div>
+                        <div class="space-y-2">
+                            <label for="clientPhone" class="block text-xs uppercase tracking-wider font-semibold text-charcoal">Phone Number <span class="text-gold">*</span></label>
+                            <input type="tel" id="clientPhone" required placeholder="e.g. +91 98765 43210" class="w-full bg-ivory border border-gold/30 rounded-xl px-4 py-3.5 text-sm text-charcoal focus:outline-none focus:border-gold transition-colors">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label for="requestedService" class="block text-xs uppercase tracking-wider font-semibold text-charcoal">Requested Service <span class="text-gold">*</span></label>
+                            <select id="requestedService" required class="w-full bg-ivory border border-gold/30 rounded-xl px-4 py-3.5 text-sm text-charcoal focus:outline-none focus:border-gold transition-colors">
+                                <option value="" disabled selected>Select a service...</option>
+                                <option value="Precision Haircuts">Precision Haircuts (Confirmed)</option>
+                                <option value="Advanced Hair Styling">Advanced Hair Styling (Confirmed)</option>
+                                <option value="Hair Colouring">Hair Colouring [Subject to Owner Approval]</option>
+                                <option value="Revitalizing Treatments">Revitalizing Treatments (Confirmed)</option>
+                                <option value="Beard Grooming & Shave">Beard Grooming & Shave (Confirmed)</option>
+                                <option value="Beauty & Skin Services">Beauty & Skin Services [Subject to Owner Approval]</option>
+                            </select>
+                        </div>
+                        <div class="space-y-2">
+                            <label for="preferredDate" class="block text-xs uppercase tracking-wider font-semibold text-charcoal">Preferred Date <span class="text-gold">*</span></label>
+                            <input type="date" id="preferredDate" required class="w-full bg-ivory border border-gold/30 rounded-xl px-4 py-3.5 text-sm text-charcoal focus:outline-none focus:border-gold transition-colors">
+                        </div>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label for="clientNotes" class="block text-xs uppercase tracking-wider font-semibold text-charcoal">Additional Notes (Optional)</label>
+                        <textarea id="clientNotes" rows="3" placeholder="Any specific stylist preference or styling requirements..." class="w-full bg-ivory border border-gold/30 rounded-xl px-4 py-3.5 text-sm text-charcoal focus:outline-none focus:border-gold transition-colors"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-charcoal text-ivory py-4 rounded-xl text-xs uppercase tracking-widest font-bold hover:bg-gold transition-all shadow-md flex items-center justify-center gap-2">
+                        <i class="fa-regular fa-paper-plane"></i> Send Appointment Enquiry
+                    </button>
+                </form>
+
+                <!-- Success Modal / Notification Box (Hidden by default) -->
+                <div id="successModal" class="hidden mt-6 p-6 bg-emerald-50 border border-emerald-300 rounded-2xl text-center space-y-3">
+                    <div class="w-12 h-12 bg-emerald-600 text-white rounded-full flex items-center justify-center mx-auto text-xl">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <h3 class="font-serif font-bold text-xl text-emerald-900">Enquiry Received Successfully!</h3>
+                    <p class="text-emerald-700 text-sm max-w-md mx-auto">
+                        Thank you! Your appointment enquiry has been recorded for Hair Desire Unisex Salon, Sector 27D, Chandigarh. We will contact you shortly to confirm.
+                    </p>
+                    <button onclick="resetForm()" class="text-xs uppercase tracking-wider font-bold text-emerald-800 underline hover:text-emerald-900 pt-2">Send Another Enquiry</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Location Section -->
+        <section id="contact" class="py-24 bg-ivory-dark/40 border-t border-gold/20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <!-- Contact Details -->
+                    <div class="lg:col-span-5 space-y-8">
+                        <div class="space-y-3">
+                            <span class="text-gold text-xs font-bold tracking-[0.25em] uppercase">Get in Touch</span>
+                            <h2 class="text-3xl sm:text-4xl font-serif font-bold text-charcoal">Visit Our Salon</h2>
+                            <p class="text-charcoal-muted text-sm">
+                                Experience luxury hair care and styling in Sector 27D, Chandigarh. Reach out or drop by during our working hours.
+                            </p>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-gold/10 text-gold flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-location-dot text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-serif font-bold text-charcoal">Address</h4>
+                                    <p class="text-charcoal-muted text-sm">Hair Desire Unisex Salon, Sector 27D, Chandigarh, India</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-gold/10 text-gold flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-phone text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-serif font-bold text-charcoal">Phone Enquiry</h4>
+                                    <p class="text-charcoal-muted text-sm">+91 98765 43210 (Placeholder)</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-gold/10 text-gold flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-clock text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-serif font-bold text-charcoal">Opening Hours</h4>
+                                    <p class="text-charcoal-muted text-sm">Monday – Sunday: 10:00 AM – 8:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 flex items-center gap-4">
+                            <a href="https://wa.me/919876543210" target="_blank" class="w-12 h-12 rounded-full bg-charcoal text-ivory flex items-center justify-center hover:bg-gold transition-colors text-lg" aria-label="WhatsApp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 rounded-full bg-charcoal text-ivory flex items-center justify-center hover:bg-gold transition-colors text-lg" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 rounded-full bg-charcoal text-ivory flex items-center justify-center hover:bg-gold transition-colors text-lg" aria-label="Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Google Maps Placeholder / Embed -->
+                    <div class="lg:col-span-7">
+                        <div class="rounded-3xl overflow-hidden shadow-xl border border-gold/30 bg-ivory-light h-[400px] relative flex flex-col items-center justify-center text-center p-8">
+                            <div class="absolute inset-0 bg-[radial-gradient(#C5A880_1px,transparent_1px)] [background-size:24px_24px] opacity-20"></div>
+                            <div class="relative z-10 space-y-4 max-w-md">
+                                <div class="w-16 h-16 bg-gold/20 text-gold rounded-full flex items-center justify-center mx-auto text-2xl animate-bounce">
+                                    <i class="fa-solid fa-map-location-dot"></i>
+                                </div>
+                                <h3 class="font-serif font-bold text-2xl text-charcoal">Sector 27D, Chandigarh Map Placeholder</h3>
+                                <p class="text-charcoal-muted text-sm">
+                                    Interactive Google Maps embed placeholder for Hair Desire Unisex Salon, Sector 27D, Chandigarh.
+                                </p>
+                                <a href="https://maps.google.com/?q=Sector+27D+Chandigarh" target="_blank" class="inline-block bg-charcoal text-ivory px-6 py-3 rounded-full text-xs uppercase tracking-wider font-semibold hover:bg-gold transition-all">
+                                    Open in Google Maps
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal text-ivory pt-16 pb-12 border-t border-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-2 space-y-4">
+                    <span class="font-serif text-2xl font-bold tracking-wide text-ivory">Hair Desire Unisex Salon</span>
+                    <p class="text-ivory/70 text-sm max-w-sm leading-relaxed">
+                        Exquisite hair design and luxury grooming located in Sector 27D, Chandigarh. Dedicated to elevating your personal style.
+                    </p>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="font-serif font-bold text-gold text-lg">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-ivory/70">
+                        <li><a href="#home" class="hover:text-gold transition-colors">Home</a></li>
+                        <li><a href="#services" class="hover:text-gold transition-colors">Services</a></li>
+                        <li><a href="#gallery" class="hover:text-gold transition-colors">Gallery</a></li>
+                        <li><a href="#about" class="hover:text-gold transition-colors">About</a></li>
+                        <li><a href="#contact" class="hover:text-gold transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="font-serif font-bold text-gold text-lg">Connect</h4>
+                    <div class="flex space-x-4 text-ivory/80 text-lg">
+                        <a href="https://wa.me/919876543210" target="_blank" class="hover:text-gold transition-colors" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" class="hover:text-gold transition-colors" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="hover:text-gold transition-colors" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                    <p class="text-xs text-ivory/50 pt-2">
+                        WhatsApp enquiry line active for instant booking assistance.
+                    </p>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-ivory/10 text-center text-xs text-ivory/60 space-y-2">
+                <p>Concept Demo — Not the Official Website of Hair Desire Unisex Salon, Sector 27D, Chandigarh.</p>
+                <p>&copy; 2026 Hair Desire Salon Concept Demo. Designed with luxury aesthetics and responsiveness.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp CTA Button -->
+    <a href="https://wa.me/919876543210?text=Hello%20Hair%20Desire%20Salon,%20I%20would%20like%20to%20enquire%20about%20appointments." target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-600 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-2xl hover:bg-green-700 hover:scale-110 transition-all" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Function to pre-select service in appointment dropdown when clicking "Enquire" on a service card
+        function selectService(serviceName) {
+            const selectElement = document.getElementById('requestedService');
+            for (let i = 0; i < selectElement.options.length; i++) {
+                if (selectElement.options[i].value === serviceName) {
+                    selectElement.selectedIndex = i;
+                    break;
+                }
+            }
+        }
+
+        // Form submission handler with validation simulation & success message
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('clientName').value.trim();
+            const phone = document.getElementById('clientPhone').value.trim();
+            const service = document.getElementById('requestedService').value;
+            const date = document.getElementById('preferredDate').value;
+
+            if (!name || !phone || !service || !date) {
+                return;
+            }
+
+            // Hide form or show success modal
+            const form = document.getElementById('enquiryForm');
+            const successModal = document.getElementById('successModal');
+            
+            form.style.display = 'none';
+            successModal.classList.remove('hidden');
+
+            // Scroll slightly to view success message comfortably
+            successModal.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        // Reset form utility
+        function resetForm() {
+            const form = document.getElementById('enquiryForm');
+            const successModal = document.getElementById('successModal');
+            
+            form.reset();
+            form.style.display = 'block';
+            successModal.classList.add('hidden');
+        }
+
+        // Set minimum date for appointment date picker to today
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('preferredDate').setAttribute('min', today);
+    </script>
+</body>
+</html>
